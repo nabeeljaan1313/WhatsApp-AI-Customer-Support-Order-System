@@ -1,147 +1,143 @@
-📱 WhatsApp AI Customer Support & Order Automation
+# 📱 WhatsApp AI Customer Support & Order Automation
 
 This project is a fully automated system that allows customers to communicate through WhatsApp and:
 
-✔ Ask questions about products
-✔ Receive instant answers from an AI agent
-✔ Place orders directly through chat
-✔ Automatically save order details into Google Sheets
+- ✔ Ask questions about products  
+- ✔ Receive instant answers from an AI agent  
+- ✔ Place orders directly through chat  
+- ✔ Automatically save order details into Google Sheets  
 
 It is designed for businesses that want fast, hands-free customer service and order management without needing a website or mobile app.
 
-🎥 Demo Video
+---
 
-▶ Watch the demo:
-[https://drive.google.com/file/d/1nB7O_LXTegyI-FoaLDQ5REtf5Ukrg1aF/view?usp=sharing](https://vimeo.com/1139488072?fl=ip&fe=ec)
+## 🎬 Demo Video
 
-🌟 How It Works (Simple Explanation)
+🎥 **Watch Demo:**  
+[![Watch the Demo](Thumbnail.jpg)](https://vimeo.com/1139488072)  
+*Click the image above to watch the real-time Customer Support & Order demo.*
 
-1️⃣ Customer sends a message on WhatsApp
-2️⃣ The AI reads the message and understands the request
-3️⃣ It looks up:
+---
 
-Product information
+## 🌟 How It Works (Simple Explanation)
 
-FAQs
-
-Pricing
-4️⃣ The AI sends a helpful reply back
-5️⃣ If the customer wants to place an order:
-
-AI collects the details
-
-Saves the order to Google Sheets
-
-Confirms back to the customer
+1. Customer sends a message on WhatsApp  
+2. The AI reads the message and understands the request  
+3. It looks up:
+   - Product information  
+   - FAQs  
+   - Pricing  
+4. The AI sends a helpful reply back  
+5. If the customer wants to place an order:
+   - The AI collects the order details  
+   - Saves them into Google Sheets  
+   - Confirms the order to the customer  
 
 Everything runs automatically — no manual involvement needed.
 
-🧠 What the AI Can Do
-💬 Answer Product Questions
+---
 
-Product features
+## 🧠 What the AI Can Do
 
-Descriptions
+### 💬 Answer Product Questions
+- Product features  
+- Descriptions  
+- Pricing  
+- Frequently asked questions  
 
-Pricing
+### 🛒 Take Orders
+- Collect product name and quantity  
+- Save order details to Google Sheets  
+- Provide instant confirmation  
 
-Frequently asked questions
+### 🧠 Maintain Conversation Context
+- The AI remembers the ongoing chat
+- Responses feel natural and human-like  
 
-🛒 Take Orders
+---
 
-Collect product and quantity
+## ⚙️ Technology Used
 
-Store order in Google Sheets
+| Purpose | Tool |
+|---|---|
+| Messaging Platform | WhatsApp |
+| AI Brain | Google Gemini Chat Model |
+| Memory | Session-based memory |
+| Product Information | Google Docs |
+| Pricing Data | Google Sheets |
+| Order Storage | Google Sheets |
+| Automation | N8N (or any workflow automation tool) |
 
-Provide confirmation instantly
+---
 
-🧠 Remember Conversation
+## 📊 Order Sheet Structure
 
-The AI keeps track of chat context so responses feel natural and human-like.
+Orders are saved in a spreadsheet with fields like:
 
-⚙️ Technology Used
-Purpose	Tool
-Messaging Platform	WhatsApp
-AI Brain	Google Gemini Chat Model
-Memory	Simple session-based memory
-Product Data	Google Docs
-Pricing	Google Sheets
-Order Storage	Google Sheets
-Automation	N8N (or any workflow automation tool)
-📊 Order Sheet Structure
+| Column | Meaning |
+|---|---|
+| Customer Name | Person placing the order |
+| Product | Item ordered |
+| Quantity | Units ordered |
+| Price | Pulled from pricing sheet |
+| Timestamp | When the order was placed |
 
-Orders are saved in a spreadsheet with fields such as:
+---
 
-Column	Meaning
-Customer Name	Person placing the order
-Product	Item ordered
-Quantity	Number of units
-Price	Pulled from pricing sheet
-Timestamp	When the order was placed
-🔁 Workflow Overview
+## 🔁 Workflow Overview
+
 WhatsApp → AI Agent → Google Docs + Sheets → WhatsApp Response
 
+The AI connects to:
 
-The AI is connected to:
+- Product FAQs  
+- Product descriptions  
+- Pricing sheet  
+- Order sheet  
 
-Product FAQs
+This helps it answer customer questions and store orders automatically.
 
-Product descriptions
+---
 
-Pricing sheet
-
-Order sheet
-
-This enables it to understand questions and store orders automatically.
-
-🚀 Who Is This For?
+## 🚀 Who Is This For?
 
 This system is ideal for:
 
-Small businesses
+- Small businesses  
+- Online sellers  
+- Home entrepreneurs  
+- Retail shops  
+- Anyone who receives customer messages on WhatsApp  
 
-Online sellers
+Once set up, no technical skills are needed to operate it.
 
-Home businesses
+---
 
-Retail stores
+## 💡 Benefits
 
-Anyone receiving customer messages on WhatsApp
+- Saves time  
+- Fully automated  
+- Reduces manual errors  
+- Provides fast customer responses  
+- Keeps all orders stored and organized  
 
-Once set up, no technical skills are required to use it.
+---
 
-💡 Benefits
+---
 
-Saves time
+## 🛠 Setup (High-Level)
 
-Fully automated
+1. Configure WhatsApp Business API  
+2. Set up an automation tool (like N8N)  
+3. Connect:
+   - Google Docs for product details  
+   - Google Sheets for pricing and orders  
+4. Add Google Gemini as the AI engine  
+5. Deploy and test with real WhatsApp messages  
 
-Reduces mistakes
+---
 
-Delivers fast customer replies
+## 📄 License
 
-Keeps orders organized in one place
+This project is released under the **MIT License**.
 
-📸 System Screenshot
-
-(Replace with your own screenshot path if needed)
-
-🛠 Setup (High-Level)
-
-Configure WhatsApp Business API
-
-Set up automation tool (e.g., N8N)
-
-Connect:
-
-Google Docs for product info
-
-Google Sheets for pricing & orders
-
-Add Google Gemini AI as the chatbot engine
-
-Deploy and test using a real WhatsApp message
-
-📄 License
-
-This project is provided under the MIT License.
